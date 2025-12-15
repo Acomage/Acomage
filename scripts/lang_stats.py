@@ -12,6 +12,21 @@ HEADERS = {
 
 API = "https://api.github.com"
 USERNAME = "Acomage"   # ← 换成你的 GitHub 用户名
+# =======================
+# Repository filters
+# =======================
+
+EXCLUDE_REPOS = {
+    "dotfiles",
+    "Acomage",        # profile README repo
+    "dotfiles-hyprland",
+}
+
+def should_skip_repo(name: str) -> bool:
+    if name in EXCLUDE_REPOS:
+        return True
+   return False
+
 
 
 def get_all_public_repos():
@@ -43,6 +58,7 @@ def get_repo_languages(owner, repo):
     )
     resp.raise_for_status()
     return resp.json()
+    
 def render_svg(stats, output="language_stats.svg"):
     width = 500
     height = 40 + len(stats) * 32
@@ -105,8 +121,11 @@ def main():
     total = defaultdict(int)
 
     for repo in repos:
+        name = repo["name"]
         if repo["fork"]:
             continue  # 忽略 fork
+        if should_skip_repo(name):
+            continue
 
         owner = repo["owner"]["login"]
         name = repo["name"]
