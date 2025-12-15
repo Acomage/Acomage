@@ -11,6 +11,7 @@ HEADERS = {
 }
 
 API = "https://api.github.com"
+USERNAME = "Acomage"   # ← 换成你的 GitHub 用户名
 
 
 def get_all_public_repos():
@@ -18,14 +19,14 @@ def get_all_public_repos():
     page = 1
     while True:
         resp = requests.get(
-            f"{API}/user/repos",
+            f"{API}/users/{USERNAME}/repos",
             headers=HEADERS,
             params={
-                "visibility": "public",
                 "per_page": 100,
                 "page": page,
             },
         )
+
         resp.raise_for_status()
         batch = resp.json()
         if not batch:
