@@ -43,7 +43,62 @@ def get_repo_languages(owner, repo):
     )
     resp.raise_for_status()
     return resp.json()
+def render_svg(stats, output="language_stats.svg"):
+    width = 500
+    height = 40 + len(stats) * 32
 
+    bar_x = 140
+    bar_width = 280
+    bar_height = 12
+
+    svg = []
+    svg.append(f"""
+<svg width="{width}" height="{height}"
+     viewBox="0 0 {width} {height}"
+     xmlns="http://www.w3.org/2000/svg">
+
+<style>
+  .title {{
+    font: bold 20px sans-serif;
+    fill: #1f6feb;
+  }}
+  .label {{
+    font: 14px sans-serif;
+    fill: #24292f;
+  }}
+  .percent {{
+    font: 13px monospace;
+    fill: #57606a;
+  }}
+</style>
+
+<rect x="0" y="0" width="{width}" height="{height}"
+      rx="12" fill="#ffffff" stroke="#d0d7de"/>
+
+<text x="20" y="30" class="title">My Programming Languages</text>
+""")
+    y = 55
+    for lang, percent in stats.items():
+        filled = bar_width * percent / 100
+
+        svg.append(f"""
+<text x="20" y="{y+10}" class="label">{lang}</text>
+
+<rect x="{bar_x}" y="{y}" width="{bar_width}" height="{bar_height}"
+      rx="6" fill="#eaeef2"/>
+
+<rect x="{bar_x}" y="{y}" width="{filled}" height="{bar_height}"
+      rx="6" fill="#2da44e"/>
+
+<text x="{bar_x + bar_width + 10}" y="{y+10}"
+      class="percent">{percent:.2f}%</text>
+""")
+        y += 32
+
+    svg.append("</svg>")
+
+    with open(output, "w", encoding="utf-8") as f:
+        f.write("".join(svg))
 
 def main():
     repos = get_all_public_repos()
@@ -83,17 +138,12 @@ def main():
     values = list(major.values())
 
     # 绘图
-    plt.figure(figsize=(6, 6))
-    plt.pie(
-        values,
-        labels=labels,
-        autopct="%1.1f%%",
-        startangle=90,
+    # 排序 + 取前 N
+    stats = dict(
+        sorted(ratios.items(), key=lambda x: -x[1])[:5]
     )
-    plt.title("Programming Language Usage")
-    plt.tight_layout()
-    plt.savefig("language_stats.svg", format="svg")
-    plt.close()
+
+    render_svg(stats)
 
     print("language_stats.svg generated.")
 
