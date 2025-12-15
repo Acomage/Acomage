@@ -25,7 +25,7 @@ EXCLUDE_REPOS = {
 def should_skip_repo(name: str) -> bool:
     if name in EXCLUDE_REPOS:
         return True
-   return False
+    return False
 
 
 
