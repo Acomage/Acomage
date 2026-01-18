@@ -23,58 +23,58 @@
 
 <text x="20" y="30" class="title">My Programming Languages</text>
 
-<text x="20" y="65" class="label">Python</text>
+<text x="20" y="65" class="label">Zig</text>
 
 <rect x="140" y="55" width="280" height="12"
       rx="6" fill="#eaeef2"/>
 
-<rect x="140" y="55" width="92.6792732665925" height="12"
+<rect x="140" y="55" width="108.62026141575949" height="12"
       rx="6" fill="#2da44e"/>
 
 <text x="430" y="65"
-      class="percent">33.10%</text>
+      class="percent">38.79%</text>
 
-<text x="20" y="97" class="label">Zig</text>
+<text x="20" y="97" class="label">Python</text>
 
 <rect x="140" y="87" width="280" height="12"
       rx="6" fill="#eaeef2"/>
 
-<rect x="140" y="87" width="67.54675565443084" height="12"
+<rect x="140" y="87" width="74.7397105170307" height="12"
       rx="6" fill="#2da44e"/>
 
 <text x="430" y="97"
-      class="percent">24.12%</text>
+      class="percent">26.69%</text>
 
 <text x="20" y="129" class="label">Lean</text>
 
 <rect x="140" y="119" width="280" height="12"
       rx="6" fill="#eaeef2"/>
 
-<rect x="140" y="119" width="59.934050179211475" height="12"
+<rect x="140" y="119" width="48.33285159263474" height="12"
       rx="6" fill="#2da44e"/>
 
 <text x="430" y="129"
-      class="percent">21.41%</text>
+      class="percent">17.26%</text>
 
 <text x="20" y="161" class="label">Futhark</text>
 
 <rect x="140" y="151" width="280" height="12"
       rx="6" fill="#eaeef2"/>
 
-<rect x="140" y="151" width="31.852379186750714" height="12"
+<rect x="140" y="151" width="25.790097936222846" height="12"
       rx="6" fill="#2da44e"/>
 
 <text x="430" y="161"
-      class="percent">11.38%</text>
+      class="percent">9.21%</text>
 
 <text x="20" y="193" class="label">Lua</text>
 
 <rect x="140" y="183" width="280" height="12"
       rx="6" fill="#eaeef2"/>
 
-<rect x="140" y="183" width="8.230082808058336" height="12"
+<rect x="140" y="183" width="6.637018018431067" height="12"
       rx="6" fill="#2da44e"/>
 
 <text x="430" y="193"
-      class="percent">2.94%</text>
+      class="percent">2.37%</text>
 </svg>
