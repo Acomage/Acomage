@@ -28,29 +28,29 @@
 <rect x="140" y="55" width="280" height="12"
       rx="6" fill="#eaeef2"/>
 
-<rect x="140" y="55" width="108.62026141575949" height="12"
+<rect x="140" y="55" width="108.6347705079488" height="12"
       rx="6" fill="#2da44e"/>
 
 <text x="430" y="65"
-      class="percent">38.79%</text>
+      class="percent">38.80%</text>
 
 <text x="20" y="97" class="label">Python</text>
 
 <rect x="140" y="87" width="280" height="12"
       rx="6" fill="#eaeef2"/>
 
-<rect x="140" y="87" width="74.7397105170307" height="12"
+<rect x="140" y="87" width="74.74969397072486" height="12"
       rx="6" fill="#2da44e"/>
 
 <text x="430" y="97"
-      class="percent">26.69%</text>
+      class="percent">26.70%</text>
 
 <text x="20" y="129" class="label">Lean</text>
 
 <rect x="140" y="119" width="280" height="12"
       rx="6" fill="#eaeef2"/>
 
-<rect x="140" y="119" width="48.33285159263474" height="12"
+<rect x="140" y="119" width="48.33930771592508" height="12"
       rx="6" fill="#2da44e"/>
 
 <text x="430" y="129"
@@ -61,7 +61,7 @@
 <rect x="140" y="151" width="280" height="12"
       rx="6" fill="#eaeef2"/>
 
-<rect x="140" y="151" width="25.790097936222846" height="12"
+<rect x="140" y="151" width="25.793542881978365" height="12"
       rx="6" fill="#2da44e"/>
 
 <text x="430" y="161"
@@ -72,9 +72,9 @@
 <rect x="140" y="183" width="280" height="12"
       rx="6" fill="#eaeef2"/>
 
-<rect x="140" y="183" width="6.637018018431067" height="12"
+<rect x="140" y="183" width="6.6005032038374285" height="12"
       rx="6" fill="#2da44e"/>
 
 <text x="430" y="193"
-      class="percent">2.37%</text>
+      class="percent">2.36%</text>
 </svg>
