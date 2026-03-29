@@ -28,53 +28,53 @@
 <rect x="140" y="55" width="280" height="12"
       rx="6" fill="#eaeef2"/>
 
-<rect x="140" y="55" width="91.36807106157667" height="12"
+<rect x="140" y="55" width="83.00221720093312" height="12"
       rx="6" fill="#2da44e"/>
 
 <text x="430" y="65"
-      class="percent">32.63%</text>
+      class="percent">29.64%</text>
 
 <text x="20" y="97" class="label">Python</text>
 
 <rect x="140" y="87" width="280" height="12"
       rx="6" fill="#eaeef2"/>
 
-<rect x="140" y="87" width="79.50406178234954" height="12"
+<rect x="140" y="87" width="72.22450170768776" height="12"
       rx="6" fill="#2da44e"/>
 
 <text x="430" y="97"
-      class="percent">28.39%</text>
+      class="percent">25.79%</text>
 
 <text x="20" y="129" class="label">Lean</text>
 
 <rect x="140" y="119" width="280" height="12"
       rx="6" fill="#eaeef2"/>
 
-<rect x="140" y="119" width="55.10987274990404" height="12"
+<rect x="140" y="119" width="71.7126384305839" height="12"
       rx="6" fill="#2da44e"/>
 
 <text x="430" y="129"
-      class="percent">19.68%</text>
+      class="percent">25.61%</text>
 
 <text x="20" y="161" class="label">Futhark</text>
 
 <rect x="140" y="151" width="280" height="12"
       rx="6" fill="#eaeef2"/>
 
-<rect x="140" y="151" width="27.434111338002637" height="12"
+<rect x="140" y="151" width="24.922186071509064" height="12"
       rx="6" fill="#2da44e"/>
 
 <text x="430" y="161"
-      class="percent">9.80%</text>
+      class="percent">8.90%</text>
 
-<text x="20" y="193" class="label">Lua</text>
+<text x="20" y="193" class="label">HTML</text>
 
 <rect x="140" y="183" width="280" height="12"
       rx="6" fill="#eaeef2"/>
 
-<rect x="140" y="183" width="7.020320574396035" height="12"
+<rect x="140" y="183" width="9.391531486757474" height="12"
       rx="6" fill="#2da44e"/>
 
 <text x="430" y="193"
-      class="percent">2.51%</text>
+      class="percent">3.35%</text>
 </svg>
